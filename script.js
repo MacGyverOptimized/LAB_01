@@ -14,4 +14,8 @@ window.onload = function () {
             );
         }
     });
+
+    let heading = document.querySelector('h1')
+    heading.innerHTML = 'Welcome to Vecta Corp.'
+    heading.setAttribute('style', 'color:red;')
 };

@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Vecta Corp.</title>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
 </head>
 <body>
-    <h1 onclick="this.style.color='blue'">Welcome</h1>
+   <!-- <h1 onclick="this.style.color='blue'">Welcome</h1> -->
+    <h1>Welcome to Vecta Corp.</h1>
     <p>With innovative approaches and advanced methodologies, Vecta Corp. provides scalable business solutions to help companies achieve success.</p>
     <h2>Our Solutions</h2>
     <ul>
@@ -16,12 +18,18 @@
         <li>vConvert 2.0</li>
         <li>vRetain 1.0</li>
     </ul>
-    <p>Contact us now at 559-555-5555 to speak to a sales rep.</p>
+    <p><a href="javascript:"
+    onclick='javascript:alert ("You just downloaded a virus!") '>Contact us now</a> at 559-555-5555 to speak to a sales rep.</p>
 
 
     <script> 
+    let heading = document.querySelector('h1')
+    heading.innerHTML = 'Welcome to Vecta Corp.'
+    heading.setAttribute('style', 'color:red;')
+    
+
     // Create a footer element 
-    const footer = document.createElement("footer"); 
+  /*  const footer = document.createElement("footer"); 
     footer.textContent = "© 2026 Vecta Corp. All rights reserved."; 
     footer.style.textAlign = "center"; 
     footer.style.marginTop = "40px"; 
@@ -29,7 +37,7 @@
     footer.style.color = "gray"; 
     
     // Insert it at the end of the body 
-    document.body.appendChild(footer); 
+    document.body.appendChild(footer); */
     </script>
 </body>
 </html>
